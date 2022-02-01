@@ -1,0 +1,7 @@
+<?php
+$host = 'localhost';
+$user = 'pari2020_admin';
+$database = 'pari2020_admin';
+$password = 'Bd648178';
+$host_url = 'https://surgusa.ru/';
+?>

@@ -1,0 +1,54 @@
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.wrapper .container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10%;
+  font-size: 24pt;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #dfdddd;
+}
+
+.wrapper .upload {
+  margin: 20% 0 0 0;
+  border: 2px #493e3e dashed;
+  height: 20%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .upload:hover {
+  background-color: #464646;
+  border: 2px red dashed;
+}
+
+.wrapper li {
+  list-style-type: none;
+}

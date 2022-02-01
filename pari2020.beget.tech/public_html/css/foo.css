@@ -1,0 +1,70 @@
+.wrapper {
+    padding: 15px 0px 0px 0px;
+    line-height: 35pt;
+    display: grid;
+    grid-template-areas: "num inf";
+    font-size: 20pt;
+    justify-content: start;
+}
+
+.wrapper a {
+    font-size: 20pt;
+}
+
+.num {
+    grid-area: "num";
+    font-size: 15pt;
+}
+
+.inf {
+    grid-area: "inf";
+    margin: 0px 0px 0px 70px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+/* Оптимизация под разрешения */
+@media screen and (max-width: 1000px) {
+    .wrapper,
+    .wrapper a {
+        font-size: 22pt;
+        line-height: 37pt;
+    }
+    .num {
+        font-size: 17pt;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .wrapper,
+    .wrapper a {
+        font-size: 25pt;
+        line-height: 40pt;
+    }
+    .num {
+        font-size: 20pt;
+    }
+}
+
+@media screen and (max-width: 656px) {
+    .wrapper,
+    .wrapper a {
+        font-size: 30pt;
+        line-height: 45pt;
+    }
+    .num {
+        font-size: 25pt;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .wrapper,
+    .wrapper a {
+        line-height: 50pt;
+        font-size: 35pt;
+    }
+    .num {
+        font-size: 30pt;
+    }
+}

@@ -1,0 +1,23 @@
+Host: http://surgusa.ru
+
+User-agent: Yandex
+Disallow: /js/*
+Disallow: /cgi-bin/*
+Disallow: /uploads/*
+Allow: /files/Call_schedule.php
+Allow: /files/List.php
+Allow: /files/Timetable_of_classes.php
+Allow: /files/global_header.php
+Allow: /files/header
+Sitemap: http://surgusa.ru/index.php
+
+User-agent: *
+Disallow: /js/*
+Disallow: /cgi-bin/*
+Disallow: /uploads/*
+Allow: /files/Call_schedule.php
+Allow: /files/List.php
+Allow: /files/Timetable_of_classes.php
+Allow: /files/global_header.php
+Allow: /files/header
+Sitemap: http://surgusa.ru/index.php

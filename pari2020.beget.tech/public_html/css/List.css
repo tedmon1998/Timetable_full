@@ -1,0 +1,111 @@
+html {
+	background-color: #898080;
+	font-family: Century Gothic MS;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+/* Уберем подчеркивание у ссылок */
+a {
+	text-decoration: none; 
+	color: #000;
+	font-size: 20pt;
+	font-family: Trebuchet MS;
+}
+
+/* Уберем точки у списка*/
+li {
+	list-style-type: none; 
+}
+
+/* Позиция блоков на странице */
+.position {
+	margin: -10px -8px 0px -8px;
+	min-width: 1200px;
+}
+
+/* Стиль для шапки */
+.header {
+	background-color: #826F6F;
+	height: 100px;
+}
+
+/* Стиль для внутренности шапки */
+.menu {
+	display: flex; 
+	justify-content: left; 
+	margin-left: 100px;
+}
+
+/* Стиль для расположения ссылок внутри шапки */
+.menu li {
+	margin: 35px 50px 0px 0px;
+}
+
+/* Стиль для самих ссылок */
+.menu_link {
+	position: relative; 
+}
+
+.menu_link:hover {
+	color: #F0EEEE;
+}
+
+.menu_link:hover:before {
+	transform: scaleX(1); 
+	transform-origin: left;
+	transition: transform 0.5s; 
+}
+
+.menu_link:before {
+	content: '';
+	width: 100%;
+	height: 0.1px;
+	background-color: #F0EEEE;
+	position: absolute; 
+	left: 0; 
+	bottom: -5px; 
+	transform-origin: right; 
+	transition: transform 0.5s;
+	transform: scaleX(0); 
+}
+
+/* Стиль для всей страницы после шапки */
+.container {
+	text-align: left;
+	font-family: Century Gothic;
+}
+
+/* Стиль для блока внутри контейнера */
+.block { 
+	height: 100%;
+	margin: 120px 150px 120px 150px;
+	padding-top: 15px;
+	font-size: 35pt;
+}
+
+/* Стиль для отделения линиями внутри блока */
+.line {
+	border: 0.001px solid #fff; 
+	width: calc(100% + 15px);
+	height: 0.01px;
+	margin: 50px 0px 0px -15px;
+}
+
+/* Стиль для списка */
+.list {
+	text-align: left;
+	list-style-type: decimal;
+	font-size: 20pt;
+	font-family: FreeMono;
+}
+
+/* Стиль для дополнительных данных в списке */
+.paragraph {
+	font-size: 16pt;
+	font-family: FreeMono;
+	color: #695656;
+}

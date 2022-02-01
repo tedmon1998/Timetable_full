@@ -1,0 +1,6 @@
+<?php
+$db_host = "localhost";
+$db_user = "pari2020_account";
+$db_password = "Pa648178!";
+$db_database = "pari2020_account";
+?>

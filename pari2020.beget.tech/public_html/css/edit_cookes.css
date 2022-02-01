@@ -1,0 +1,169 @@
+.fa-cog {
+    color: #fff;
+}
+* {
+    /*расстояние внутри блока*/
+    padding: 0;
+    /*расстояние между блоками*/
+    margin: 0;
+    /*рамка*/
+    border: 0;
+}
+
+html,
+body {
+    background-color: #898080;
+    font-family: Century Gothic MS;
+    /*для одинакового отображения текста на всех устройствах*/
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------ header ---------- */
+/* Стиль для шапки */
+.header {
+    background-color: #826f6f;
+    height: 110px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav {
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+.line {
+    height: 100%;
+    width: 2px;
+    background-color: #1d1e21;
+    color: #1d1e21;
+}
+.setting_border {
+    border: 2px #1d1e21 solid;
+    border-radius: 50px;
+    padding: 10px;
+}
+.title_settings,
+.form-item {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 550;
+}
+.title_settings {
+    font-size: 20pt;
+    margin: 0 0 20px 0;
+}
+.form-item a {
+    font-size: 15pt;
+    /* border: 2px red dashed; */
+}
+
+@media screen and (max-width: 760px) {
+    .global_nav i {
+        font-size: 20pt !important;
+    }
+    .global_nav {
+        top: calc(100% - 55px) !important;
+        height: 55px !important;
+    }
+}
+@media screen and (max-width: 480px) {
+    .global_nav i {
+        font-size: 23pt !important;
+    }
+    .global_nav {
+        top: calc(100% - 80px) !important;
+        height: 80px !important;
+    }
+}
+
+/* Уберем подчеркивание у ссылок */
+a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20pt;
+    font-family: Trebuchet MS;
+}
+
+/* Уберем точки у списка*/
+li {
+    list-style-type: none;
+}
+.container {
+    padding: 0 20%;
+}
+.form {
+    width: 400px;
+}
+.radio-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    font-family: sans-serif;
+}
+
+.radio-container * {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.radio-container .radio-btn {
+    overflow: hidden;
+}
+.radio-container .radio-btn.nth-2 {
+    width: calc(50% - 1px);
+}
+.radio-container .radio-btn.nth-3 {
+    width: calc(33.3333% - 1.4px);
+}
+.radio-container .radio-btn.nth-4 {
+    width: calc(25% - 1.5px);
+}
+.radio-container .radio-btn label {
+    background: linear-gradient(to bottom, #1d1e21 0%, #1d1e21 100%);
+    display: block;
+    padding: 6px 12px;
+    text-align: center;
+    color: #7e7e7e;
+    border-top: 1px solid #b4b5b9;
+    border-bottom: 1px solid #b4b5b9;
+    border-right: 1px solid #b4b5b9;
+    margin: 10px 0;
+}
+.radio-container .radio-btn input {
+    display: none;
+}
+.radio-container .radio-btn input:checked + label {
+    background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+    color: #1d1e21;
+}
+.radio-container .radio-btn:first-child label {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-left: 1px solid #b4b5b9;
+}
+.radio-container .radio-btn:last-child label {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+@media (max-width: 455px) {
+    .radio-container .radio-btn label {
+        margin: 5px 0;
+    }
+}

@@ -1,0 +1,310 @@
+.fa-list-alt {
+    color: #fff;
+}
+
+* {
+    /*расстояние внутри блока*/
+    padding: 0;
+    /*расстояние между блоками*/
+    margin: 0;
+    /*рамка*/
+    border: 0;
+}
+
+html,
+body {
+    background-color: #898080;
+    font-family: Century Gothic MS;
+    /*для одинакового отображения текста на всех устройствах*/
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Уберем подчеркивание у ссылок */
+a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20pt;
+    font-family: Trebuchet MS;
+}
+
+/* Стили для иконки */
+.material-icons.md-18 {
+    font-size: 25pt;
+}
+
+/* Уберем точки у списка*/
+li {
+    list-style-type: none;
+}
+
+/* Позиция блоков на странице */
+.position {
+    min-width: 1100px;
+}
+
+/* Стиль для шапки */
+.header {
+    background-color: #826f6f;
+    height: 110px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav {
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* выравниевние числителя и знаменателя по центру */
+.wrapper_block {
+    display: flex;
+    justify-content: center;
+}
+.block ul li {
+    display: inline;
+    margin: 0px 25px;
+}
+/* выравниевние числителя и знаменателя по центру */
+.wrapper_block {
+    top: 110px;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    width: 100%;
+}
+/* Стиль для блока внутри контейнера */
+.even_odd {
+    height: 100%;
+    font-size: 35pt;
+    display: flex;
+    justify-content: center;
+}
+.even_odd__link {
+    margin: 0px 50px;
+}
+
+.block ul li {
+    display: inline;
+    margin: 0px 25px;
+}
+
+.right {
+    position: absolute;
+    left: 100%;
+}
+
+/* Стиль для самих ссылок */
+.nav_link {
+    position: relative;
+}
+
+.nav_link:hover {
+    color: #f0eeee;
+}
+
+.nav_link:hover:before {
+    transform: scaleX(1.00001);
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+
+.nav_link:before {
+    content: "";
+    width: 100%;
+    height: 0.1px;
+    background-color: #f0eeee;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transform-origin: right;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+}
+
+/* Стиль для всей страницы после шапки */
+.container {
+    text-align: left;
+    font-family: Century Gothic;
+}
+
+/* Стиль для блока внутри контейнера */
+.block {
+    height: 100%;
+    margin: 50px 150px;
+    padding: 15px 30px 0 0;
+    font-size: 35pt;
+}
+
+/* Стиль внутри блока */
+.frame {
+    height: 100%;
+    margin: 30px 50px 0px 50px;
+    padding-left: 10px;
+    font-size: 15pt;
+    text-align: left;
+}
+
+/* Стиль для отделения линиями внутри блока */
+.line {
+    border: 0.001px solid #fff;
+    width: calc(100% + 15px);
+    height: 0.01px;
+    margin: 25px 0px 0px -15px;
+}
+
+/* Стиль для списка */
+.list {
+    text-align: left;
+    list-style-type: decimal;
+    font-size: 20pt;
+    font-family: FreeMono;
+}
+
+/* Стиль для дополнительных данных в списке */
+.paragraph {
+    font-size: 16pt;
+    font-family: FreeMono;
+    color: #695656;
+}
+
+/* Стиль для динамической шапки*/
+.header_fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation-name: show_header;
+    animation-duration: 1s;
+}
+
+@keyframes show_header {
+    0% {
+        opacity: 0;
+        top: -70px;
+    }
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+.active {
+    color: #fff;
+}
+
+/* Преобразование в краткий текст (оптимизация шапки) */
+.monday:after {
+    content: "Понедельник";
+}
+@media screen and (max-width: 1150px) {
+    .monday:after {
+        content: "ПН";
+    }
+}
+
+.tuesday:after {
+    content: "Вторник";
+}
+@media screen and (max-width: 1150px) {
+    .tuesday:after {
+        content: "ВТ";
+    }
+}
+
+.wednesday:after {
+    content: "Среда";
+}
+@media screen and (max-width: 1150px) {
+    .wednesday:after {
+        content: "СР";
+    }
+}
+
+.thursday:after {
+    content: "Четверг";
+}
+@media screen and (max-width: 1150px) {
+    .thursday:after {
+        content: "ЧТ";
+    }
+}
+
+.friday:after {
+    content: "Пятница";
+}
+@media screen and (max-width: 1150px) {
+    .friday:after {
+        content: "ПТ";
+    }
+}
+
+.saturday:after {
+    content: "Суббота";
+}
+@media screen and (max-width: 1150px) {
+    .saturday:after {
+        content: "СБ";
+    }
+}
+
+/* Оптимизация под разрешения */
+@media screen and (max-width: 1000px) {
+    .block {
+        font-size: 37pt;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    /* Стиль для шапки */
+    .header {
+        height: 150px;
+    }
+    .nav_link {
+        font-size: 25pt;
+    }
+    /* Стили для иконки */
+    .material-icons.md-18 {
+        font-size: 35pt;
+    }
+    .block {
+        font-size: 38pt;
+        margin: 35px 70px;
+        padding: 15px 0;
+    }
+    a {
+        font-size: 21pt;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Стиль для шапки */
+    .header {
+        height: 200px;
+    }
+    .nav_link {
+        font-size: 35pt;
+    }
+    /* Стили для иконки */
+    .material-icons.md-18 {
+        font-size: 50pt;
+    }
+    .block {
+        font-size: 40pt;
+        margin: 35px 60px;
+    }
+    a {
+        font-size: 22pt;
+    }
+}
